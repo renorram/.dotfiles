@@ -213,6 +213,9 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+smart_gaps on
+gaps inner 15
+gaps outer 5 
 # hide side borders
 hide_edge_borders both
 # remove title bar um fullscreen apps
@@ -222,3 +225,5 @@ default_border none
 default_floating_border normal
 # starts networkmanager applet, the icon is placed on the tray are of i3bar
 exec --no-startup-id nm-applet
+exec --no-startup-id compton -b
+exec feh --bg-scale /home/renorram/Imagens/wallpaper.png
